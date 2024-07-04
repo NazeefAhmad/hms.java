@@ -42,7 +42,7 @@ The **Hotel Management System** is a console-based application designed to manag
 
 ### Installation
 
-1. **Clone the Repository**
+1. **Cloning the Repository**
     ```sh
     git clone https://github.com/yourusername/HotelNazaraManagementSystem.git
     cd HotelNazaraManagementSystem
