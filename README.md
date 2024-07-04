@@ -1,10 +1,10 @@
-# Hotel Management System
+# 🏨 Hotel Nazara Management System
 
 ## Overview
 
-The **Hotel Nazara Management System** is a console-based application designed to manage room bookings for a fictional hotel named "Hotel Nazara." This project leverages Object-Oriented Programming (OOP) principles to provide a modular, maintainable, and scalable solution. The system allows users to book different types of rooms, generate receipts, and view terms and conditions. It includes error handling to ensure robustness and user-friendly interaction.
+The **Hotel Nazara Management System** is a console-based application designed to manage room bookings for a fictional hotel named "Hotel Nazara." This project leverages **Object-Oriented Programming (OOP)** principles to provide a modular, maintainable, and scalable solution. The system allows users to book different types of rooms, generate receipts, and view terms and conditions. It includes error handling to ensure robustness and user-friendly interaction.
 
-## Features
+## ✨ Features
 
 - **Room Booking**: Users can book Deluxe, Premium, or Luxury rooms.
 - **Receipt Generation**: Detailed receipts are generated for bookings.
@@ -12,7 +12,7 @@ The **Hotel Nazara Management System** is a console-based application designed t
 - **Terms and Conditions**: Display hotel policies and rules.
 - **Modular Design**: Uses OOP principles for easy maintenance and scalability.
 
-## OOP Concepts Used
+## 🔧 OOP Concepts Used
 
 1. **Classes and Objects**: Defines the structure and behavior of various components.
 2. **Encapsulation**: Protects data within classes and provides controlled access.
@@ -21,7 +21,7 @@ The **Hotel Nazara Management System** is a console-based application designed t
 5. **Exception Handling**: Manages errors to prevent crashes and ensure smooth execution.
 6. **Static Initialization Block**: Initializes static variables when the class is first loaded.
 
-## Future Enhancements
+## 🚀 Future Enhancements
 
 - **Inheritance and Polymorphism**: Create a hierarchy for different room types.
 - **File I/O for Data Persistence**: Store booking information in files.
@@ -33,7 +33,7 @@ The **Hotel Nazara Management System** is a console-based application designed t
 - **Feedback System**: Allow users to leave feedback and reviews.
 - **Notification System**: Send email/SMS notifications.
 
-## Getting Started
+## 🛠️ Getting Started
 
 ### Prerequisites
 
@@ -58,7 +58,7 @@ The **Hotel Nazara Management System** is a console-based application designed t
     java HotelManagementSystem
     ```
 
-## Usage
+## 🎮 Usage
 
 1. **Booking a Room**
     - Select the number of guests.
@@ -71,10 +71,9 @@ The **Hotel Nazara Management System** is a console-based application designed t
 3. **Handling Emergencies**
     - Press the designated key for emergency alerts (simulated with beeps).
 
-## Code Structure
+## 📂 Code Structure
 
 ### Class Diagram
-
 
 
 ### Main Classes and Methods
@@ -93,11 +92,11 @@ The **Hotel Nazara Management System** is a console-based application designed t
     - `generateReceipt()`
     - `saveBooking()`
 
-## Contributions
+## 🤝 Contributions
 
 Contributions are welcome! Feel free to open issues or submit pull requests to enhance the functionality or add new features.
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
@@ -109,4 +108,4 @@ For any queries or support, please contact hackblackpearl@gmail.com.
 
 ---
 
-Thank you for using the Hotel Nazara Management System! We hope it meets your expectations and requirements.
+Thank you for using the Hotel Management System! We hope it meets your expectations and requirements.
