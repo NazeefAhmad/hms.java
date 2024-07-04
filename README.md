@@ -1,4 +1,4 @@
-# Hotel Nazara Management System
+# Hotel Management System
 
 ## Overview
 
