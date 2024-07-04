@@ -1,9 +1,17 @@
+import java.util.HashMap;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class HotelNazara {
+    static HashMap<String, Integer> roomInventory = new HashMap<>();
+    
+    static {
+        roomInventory.put("Deluxe", 10);
+        roomInventory.put("Premium", 5);
+        roomInventory.put("Luxury", 3);
+    }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int num = 0;
         int opt = 0;
@@ -29,18 +37,30 @@ public class HotelNazara {
 
                 switch (opt) {
                     case 4:
-                        System.out.println("Congratulations! You are allotted with Deluxe room");
-                        receipt(num, 2000);
+                        if (checkAvailability("Deluxe", num)) {
+                            System.out.println("Congratulations! You are allotted with Deluxe room");
+                            receipt(num, 2000);
+                        } else {
+                            System.out.println("Sorry, Deluxe rooms are fully booked.");
+                        }
                         break;
                     case 5:
-                        num = (num == 1) ? 2 : (num == 2) ? 4 : 6;
-                        System.out.println("Congratulations! You are allotted with Premium room");
-                        receipt(num, 4000);
+                        if (checkAvailability("Premium", num)) {
+                            num = (num == 1) ? 2 : (num == 2) ? 4 : 6;
+                            System.out.println("Congratulations! You are allotted with Premium room");
+                            receipt(num, 4000);
+                        } else {
+                            System.out.println("Sorry, Premium rooms are fully booked.");
+                        }
                         break;
                     case 6:
-                        num = (num == 1) ? 3 : (num == 2) ? 6 : 9;
-                        System.out.println("Congratulations! You are allotted with Luxury room");
-                        receipt(num, 6000);
+                        if (checkAvailability("Luxury", num)) {
+                            num = (num == 1) ? 3 : (num == 2) ? 6 : 9;
+                            System.out.println("Congratulations! You are allotted with Luxury room");
+                            receipt(num, 6000);
+                        } else {
+                            System.out.println("Sorry, Luxury rooms are fully booked.");
+                        }
                         break;
                     default:
                         System.out.println("Invalid option selected.");
@@ -69,10 +89,19 @@ public class HotelNazara {
         } catch (InputMismatchException e) {
             System.out.println("Invalid input. Please enter a number.");
             scanner.nextLine(); // Clear the invalid input
-        } catch (Exception e) {
+        } catch (InterruptedException e) {
             System.out.println("An unexpected error occurred: " + e.getMessage());
         } finally {
             scanner.close();
+        }
+    }
+
+    public static boolean checkAvailability(String roomType, int num) {
+        if (roomInventory.get(roomType) >= num) {
+            roomInventory.put(roomType, roomInventory.get(roomType) - num);
+            return true;
+        } else {
+            return false;
         }
     }
 
