@@ -1,8 +1,8 @@
-# 🏨 Hotel Nazara Management System
+# 🏨 Hotel Management System
 
 ## Overview
 
-The **Hotel Nazara Management System** is a console-based application designed to manage room bookings for a fictional hotel named "Hotel Nazara." This project leverages **Object-Oriented Programming (OOP)** principles to provide a modular, maintainable, and scalable solution. The system allows users to book different types of rooms, generate receipts, and view terms and conditions. It includes error handling to ensure robustness and user-friendly interaction.
+The **Hotel Management System** is a console-based application designed to manage room bookings for a fictional hotel named "Hotel Nazara." This project leverages **Object-Oriented Programming (OOP)** principles to provide a modular, maintainable, and scalable solution. The system allows users to book different types of rooms, generate receipts, and view terms and conditions. It includes error handling to ensure robustness and user-friendly interaction.
 
 ## ✨ Features
 
